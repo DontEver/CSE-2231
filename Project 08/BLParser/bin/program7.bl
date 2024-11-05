@@ -1,0 +1,26 @@
+PROGRAM Test7 IS
+
+  INSTRUCTION turnleft IS
+     turnleft
+  END turnleft
+  
+  INSTRUCTION two IS
+    one
+    IF next-is-not-empty THEN
+      turnleft
+    ELSE
+      turnleft
+      turnleft
+    END IF
+  END two
+
+BEGIN
+  infect
+  WHILE true DO
+    two
+    IF next-is-empty THEN
+      move
+    END IF
+    two
+  END WHILE
+END Test7

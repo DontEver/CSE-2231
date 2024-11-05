@@ -1,0 +1,18 @@
+PROGRAM Test4 IS
+  
+  INSTRUCTION first IS
+    move
+    move
+    turnright
+  END first
+
+ INSTRUCTION second IS
+    turnleft
+    turnright
+  END second
+
+BEGIN
+  WHILE true DO
+    turnleft
+  END WHILE
+END Test4

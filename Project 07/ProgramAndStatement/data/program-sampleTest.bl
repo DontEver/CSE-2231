@@ -1,0 +1,22 @@
+PROGRAM Test2 IS
+
+  INSTRUCTION one2 IS
+     move
+     move
+  END one2
+  
+  INSTRUCTION two IS
+    turnleft
+    turnleft
+  END two
+
+BEGIN
+  WHILE true DO
+    two
+    IF next-is-wall THEN
+    one2
+    ELSE
+    two
+    END IF
+  END WHILE
+END Test2

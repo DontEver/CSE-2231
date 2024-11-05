@@ -1,0 +1,5 @@
+move
+turnleft
+WHILE true DO
+     move
+END WHILE
